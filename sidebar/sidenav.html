@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Passion+One' 
+     rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+    <link href="navside.css" type="text/css" rel="stylesheet">
+    <script src="script.js"></script>
+  
+          
+</head>
+<body>
+
+	<div class="navbar navbar-inverse">
+    	<div class="navbar nav-header right">
+        	<input type="text" class="search " placeholder="Search">
+        	<button type="submit" class=" btn btn-default">Submit</button>
+        </div>
+		<div class="container">
+			<div class="row">
+		 		<div id="wrapper">
+        <!-- Sidebar -->
+        			<div id="sidebar-wrapper">
+            			<ul class="sidebar-nav" >
+                			<li class="sidebar-brand">
+                			<img src="user.png" width="40px" height="40px">
+                         		<a href="#menu-toggle" id="toggle" style="margin-top:20px;float:right;" > 
+                         		<i class="fa fa-bars "  aria-hidden="true">
+                        		</i>
+                        		</a>
+                    
+              				</li>
+                			<li>
+                    			<a href="../footer/sticky.html" target="frame">
+                                <i class=" fa fa-th-large " aria-hidden="true"> </i> <span >Backlogs</span>  </a>
+                			</li>
+                			<li>
+                    			<a href="../footer/footer.html" target="frame"> <i class="fa  fa-columns " aria-hidden="true"> </i> <span >ActiveSpirints</span> </a>
+                			</li>
+                			<li>
+                    			<a href="../task/tpopup.html" target="frame"> <i class="fa fa-industry  " aria-hidden="true"> </i> <span >Releases</span> </a>
+                			</li>
+                			<li>
+                    			<a href="#"> <i class="fa  fa-question-circle " aria-hidden="true"> </i> <span> Report</span> </a>
+                			</li>
+                			<li>
+                    		<a href="#"> <i class="fa fa-search " aria-hidden="true"> </i> <span > Issues</span> 
+                    		</a>
+                			</li>
+                			<li>
+                    			<a href="#"><i class="fa fa-map-signs " aria-hidden="true"> </i> <span >Components </span> 
+                    			</a>
+                			</li>
+                			<li>
+                    		<a href="#"> <i class="fa fa-plus" aria-hidden="true"> </i> <span > Add Shortcuts</span> 
+                    		</a>
+                			</li>
+                			<li>
+                    		<a href="#"> <i class="fa fa-plus"  aria-hidden="true"> </i> <span > Add Code</span> 
+                    		</a>
+                			</li>
+                			<li>
+                    		 <a href="#"> <i class="fa fa-user-plus" aria-hidden="true"> </i> <span > Invite</span> 
+                    		</a>
+                			</li>
+                			<li>
+                    		<a href="#"> <i class="fa  fa-gear" aria-hidden="true"> </i> <span > Settings</span> 
+                    		</a>
+                			</li> 
+                            </ul> 
+                   				<a href="#menu-toggle"  id="menu-toggle"  >
+                   				<i class="fa fa-angle-double-left" aria-hidden="true" >
+                   				</i>
+                             </a>  
+        			</div>
+    			</div>
+     			</div>
+			</div>
+         </div>
+         
+            <iframe src="" name="frame" style="margin-left:220px; border:none;" height="600" width="1000"></iframe>
+           <script type="text/javascript">
+               $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+        $(this).find('i').toggleClass('fa fa-angle-double-left-left').toggleClass('fa fa-angle-double-right');
+    });
+     $("#toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+
+    });
+
+           </script>
+
+
+    
+	
+</body>
+  
+
+</html>
